@@ -1,63 +1,38 @@
-Claro, aquí tienes un ejemplo de cómo podría ser un archivo README para tu script `preguntas_trabajadores4.0.py`:
-
----
-
 # Chat de Consultas Laborales
 
-Este es un programa de chat que simula una interfaz para realizar consultas laborales. Permite al usuario seleccionar el tipo de consulta que desea hacer y generar preguntas aleatorias relacionadas con el estado de los trabajadores, visados y documentos, y detalles de trabajadores asignados. Además, asigna un nombre de cliente aleatorio de una lista de empresas importantes en Estados Unidos a cada consulta.
+Este programa de Python es un chat de simulación para consultas laborales, donde se generan preguntas de manera aleatoria para diferentes tipos de consultas relacionadas con trabajadores y empresas.
 
-## Funcionalidades
+## Funcionamiento
 
-- **Selección de Tipo de Consulta:** El usuario puede elegir entre tres tipos de consultas disponibles:
-  - Estado de los Trabajadores Solicitados
-  - Estado de Visados y Documentos
-  - Detalles de los Trabajadores Asignados
+Al ejecutar el programa, se abrirá una ventana de chat con una serie de opciones para seleccionar el tipo de consulta:
 
-- **Generación de Preguntas Aleatorias:** Al presionar el botón "Enviar", se genera una pregunta aleatoria correspondiente al tipo de consulta seleccionado.
+1. **Estado de los Trabajadores Solicitados**
+2. **Estado de Visados y Documentos**
+3. **Detalles de los Trabajadores Asignados**
 
-- **Asignación de Cliente:** Cada consulta generada está asociada con un nombre de cliente aleatorio de una lista de empresas importantes en Estados Unidos.
+Al presionar el botón "Enviar", se generará una pregunta aleatoria del tipo seleccionado y se mostrará en el chat. Cada consulta tendrá un color de letra aleatorio para facilitar la diferenciación de mensajes en la misma conversación.
 
-- **Limpiar el Chat:** Existe un botón para limpiar todo el historial del chat.
+## Archivos Principales
 
-- **Copiar Chat al Portapapeles:** También hay un botón para copiar el contenido del chat al portapapeles.
+### `preguntas_trabajadores4.0.py`
 
-## Requerimientos
+Este archivo contiene el código principal del chat. Al ejecutarlo, se abrirá la interfaz gráfica donde se podrá interactuar con el chat y generar consultas aleatorias.
+
+### `status_preguntas.py`
+
+En este archivo se encuentran las preguntas disponibles para cada tipo de consulta. Las preguntas se eligen de manera aleatoria para simular la interacción del usuario.
+
+### `listado_Clientes.py`
+
+Aquí se encuentra un listado de clientes que son empresas importantes en los Estados Unidos. Este listado se utiliza para asignar un cliente aleatorio a cada consulta generada.
+
+## Requisitos
 
 - Python 3.x
-- Tkinter (usualmente incluido en las distribuciones estándar de Python)
+- Bibliotecas Python: `tkinter`, `random`, `pyperclip`
 
-## Uso
+## Ejecución
 
-1. Clona o descarga este repositorio en tu máquina local.
-   
-2. Ejecuta el script `preguntas_trabajadores4.0.py` usando Python:
-   
-   ```bash
-   python preguntas_trabajadores4.0.py
-   ```
-   
-3. Se abrirá la ventana de la interfaz del chat.
-   
-4. Selecciona el tipo de consulta deseado en el menú desplegable.
+Para ejecutar el programa, puedes usar el siguiente comando:
 
-5. Presiona el botón "Enviar" para generar una pregunta aleatoria.
-
-6. El chat mostrará la pregunta generada junto con el nombre de cliente asignado.
-
-7. Puedes limpiar el chat usando el botón "Limpiar Chat" y copiar su contenido con el botón "Copiar Chat".
-
-## Capturas de Pantalla
-
-_(Puedes agregar capturas de pantalla de la interfaz del chat aquí)_
-
-## Notas Adicionales
-
-- Este programa es una simulación y las consultas generadas son aleatorias para propósitos de demostración.
-
-- Los nombres de los clientes asignados también son aleatorios y provienen de una lista de empresas importantes en Estados Unidos.
-
-- Si encuentras algún problema o tienes sugerencias de mejora, no dudes en abrir un _issue_ en este repositorio.
-
----
-
-Por supuesto, puedes personalizar este README agregando más información o ajustándolo según tus necesidades específicas. Recuerda actualizar cualquier sección que sea relevante para tu programa.
+```bash
