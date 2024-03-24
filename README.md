@@ -36,3 +36,4 @@ Aquí se encuentra un listado de clientes que son empresas importantes en los Es
 Para ejecutar el programa, puedes usar el siguiente comando:
 
 ```bash
+python preguntas_trabajadores4.0.py
