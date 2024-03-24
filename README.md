@@ -1,60 +1,47 @@
-# Chat de Consultas Laborales
+Chat de Consultas Laborales
+Este es un programa de chat que simula una interfaz para realizar consultas laborales. Permite al usuario seleccionar el tipo de consulta que desea hacer y generar preguntas aleatorias relacionadas con el estado de los trabajadores, visados y documentos, y detalles de trabajadores asignados. Además, asigna un nombre de cliente aleatorio de una lista de empresas importantes en Estados Unidos a cada consulta.
 
-Este es un simple chat de consultas laborales desarrollado en Python utilizando la biblioteca Tkinter para la interfaz gráfica.
+Funcionalidades
+Selección de Tipo de Consulta: El usuario puede elegir entre tres tipos de consultas disponibles:
 
-## Funcionalidades
+Estado de los Trabajadores Solicitados
+Estado de Visados y Documentos
+Detalles de los Trabajadores Asignados
+Generación de Preguntas Aleatorias: Al presionar el botón "Enviar", se genera una pregunta aleatoria correspondiente al tipo de consulta seleccionado.
 
-- Permite al usuario seleccionar el tipo de consulta que desea realizar.
-- Genera preguntas aleatorias según el tipo de consulta seleccionado.
-- Muestra las preguntas en la ventana de chat.
+Asignación de Cliente: Cada consulta generada está asociada con un nombre de cliente aleatorio de una lista de empresas importantes en Estados Unidos.
 
-## Requisitos
+Limpiar el Chat: Existe un botón para limpiar todo el historial del chat.
 
-- Python 3.x instalado en su sistema.
-- Biblioteca estándar de Python (no se requiere instalación adicional).
+Copiar Chat al Portapapeles: También hay un botón para copiar el contenido del chat al portapapeles.
 
-## Instrucciones de Uso
+Requerimientos
+Python 3.x
+Tkinter (usualmente incluido en las distribuciones estándar de Python)
+Uso
+Clona o descarga este repositorio en tu máquina local.
 
-1. Clonar o descargar este repositorio en su máquina local.
-2. Ejecutar el script `chat_consultas_laborales.py` usando Python:
+Ejecuta el script preguntas_trabajadores4.0.py usando Python:
 
-    ```bash
-    python chat_consultas_laborales.py
-    ```
+bash
+Copy code
+python preguntas_trabajadores4.0.py
+Se abrirá la ventana de la interfaz del chat.
 
-3. Se abrirá la ventana del chat donde puede realizar las siguientes acciones:
-    - Seleccionar el tipo de consulta en el menú desplegable.
-    - Hacer clic en el botón "Enviar" para generar una pregunta aleatoria.
-    - Ver las preguntas generadas en la ventana de chat.
+Selecciona el tipo de consulta deseado en el menú desplegable.
 
-## Capturas de Pantalla
+Presiona el botón "Enviar" para generar una pregunta aleatoria.
 
-![Captura de pantalla del chat](screenshot_chat.png)
+El chat mostrará la pregunta generada junto con el nombre de cliente asignado.
 
-## Estructura del Código
+Puedes limpiar el chat usando el botón "Limpiar Chat" y copiar su contenido con el botón "Copiar Chat".
 
-- `chat_consultas_laborales.py`: Contiene el código principal de la aplicación.
-- `status_preguntas.py`: Archivo con preguntas predefinidas para diferentes tipos de consultas.
+Capturas de Pantalla
+(Puedes agregar capturas de pantalla de la interfaz del chat aquí)
 
-## Contribución
+Notas Adicionales
+Este programa es una simulación y las consultas generadas son aleatorias para propósitos de demostración.
 
-Si deseas contribuir a este proyecto, por favor sigue los siguientes pasos:
+Los nombres de los clientes asignados también son aleatorios y provienen de una lista de empresas importantes en Estados Unidos.
 
-1. Haz un fork del repositorio.
-2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
-3. Realiza tus cambios y realiza commit (`git commit -am 'Agrega nueva funcionalidad'`).
-4. Haz push a la rama (`git push origin feature/nueva-funcionalidad`).
-5. Crea un nuevo Pull Request.
-
-## Créditos
-
-Este proyecto fue creado por [Tu Nombre].
-
-## Contacto
-
-Si tienes preguntas o comentarios, por favor contacta a [tuemail@example.com].
-
----
-**Nota:** Recuerda reemplazar `[Tu Nombre]` y `[tuemail@example.com]` con tu información real.
-
-Esta es una plantilla básica para un README. Puedes expandirla y personalizarla según las necesidades específicas del proyecto.
+Si encuentras algún problema o tienes sugerencias de mejora, no dudes en abrir un issue en este repositorio.
